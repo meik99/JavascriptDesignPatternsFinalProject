@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid" id="map">
+
+    </div>
+
+    <script src="js/knockout-3.4.0.js"></script>
+    <script src="js/gmaps/gmaps.js"></script>
+    <script src="js/appstart/app.js"></script>
+
+    <script>
+      function initMap(){
+        app.initMap();
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4xuvV0NjMKGWgXigsuUtFvaCbpmBKpbw&callback=initMap">
+    </script>
+</body>
+</html>
