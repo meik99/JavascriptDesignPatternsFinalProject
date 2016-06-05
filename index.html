@@ -4,16 +4,27 @@
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <style type="text/css">
       html, body { height: 100%; margin: 0; padding: 0; }
-      #map { height: 100%; }
+      #map { height: 100%; margin: 0; padding: 0; }
+      .map-canvas{ height: 100%; margin: 0; padding: 0; min-height: 100px;}
     </style>
 </head>
 <body>
+    <div class="col-md-2">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-input-group">
+            <input type="text" placeholder="Search Marker" class="form-control"
+                data-bind="textInput: search"/>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="container-fluid" id="map">
-
+    <div class="container-fluid"  id="map">
     </div>
 
     <script src="js/knockout-3.4.0.js"></script>
+    <script src="js/gmaps/marker.js"></script>
     <script src="js/gmaps/gmaps.js"></script>
     <script src="js/appstart/app.js"></script>
 
